@@ -12,7 +12,7 @@ local function generatePlate()
     return plate
 end
 
-ESX.RegisterCommand('givecar', {'owner', 'best', 'admin'}, function(xPlayer, args, showError)
+ESX.RegisterCommand('givecar', {'zarzad', 'best', 'superadmin'}, function(xPlayer, args, showError)
     if not args.playerId then
         return xPlayer.showNotification('Podaj ID Gracza')
     end
